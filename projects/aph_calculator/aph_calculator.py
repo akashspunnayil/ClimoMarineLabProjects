@@ -17,8 +17,7 @@ for package in packages:
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import pandas as pd
-import matplotlib
-matplotlib.use('Agg')
+
 
 
 def load_csv():
@@ -33,22 +32,15 @@ def load_csv():
         except Exception as e:
             messagebox.showerror("Error", f"An error occurred during data processing: {str(e)}")
         finally:
-            root.destroy()  # Close the Tkinter window after loading the data
+            root.destroy() 
 
 
 def process_data(df):
     # Your existing data processing code here
-    # For example:
     print(df.head())  # Just printing the head of the DataFrame as an example
     
 
-#     # Read the CSV file into a DataFrame
-#     df = pd.read_csv('./test2.csv', parse_dates=["Date"], dayfirst=True)
-#     df = df.replace("NA", pd.NA)
-
     # Threshold value
-    # NAAQS threshold
-    # threshold_value = 90     # 90 µg/m^3    ; For PM10
     # WHO threshold
     threshold_value = 67.5     # 45 µg/m^3    ; For PM10
     #threshold_value = 22.5     # 15 µg/m^3    ; For PM2.5
@@ -132,7 +124,7 @@ def process_data(df):
         print("Criterion 2:", places_meeting_criterion_2)
         print("Criterion 3:", places_meeting_criterion_3)
 
-        # Sheet 1: Print places meeting each criterion for each month
+        
         # Create separate DataFrames for each criterion
         sheet_df_criterion1 = pd.DataFrame({"Criterion 1": list(places_meeting_criterion_1)})
         sheet_df_criterion2 = pd.DataFrame({"Criterion 2": list(places_meeting_criterion_2)})
@@ -152,7 +144,6 @@ def process_data(df):
         print("| Criterion 3 |:", [place for place, _ in places_meeting_criterion_3])
 
 
-        # Find the intersection of places meeting all three criteria for this month
         # Find the intersection of places meeting all three criteria for this month
         places_meeting_all_criteria = {place for place, _ in places_meeting_criterion_1} & \
                                        {place for place, _ in places_meeting_criterion_2} & \
@@ -333,3 +324,8 @@ load_button.pack(pady=200, padx=200)
 
 # Run the Tkinter event loop
 root.mainloop()
+
+
+#### end of code  ####
+
+
