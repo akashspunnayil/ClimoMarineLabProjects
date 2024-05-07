@@ -17,11 +17,8 @@ for package in packages:
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import pandas as pd
-import argparse
 
-args = {}
-threshold_value = {}
-standard_value = {}
+
 
 def load_csv():
     file_path = filedialog.askopenfilename(filetypes=[("CSV files", "*.csv")])
@@ -31,38 +28,24 @@ def load_csv():
         df = df.replace("NA", pd.NA)
         #process_data(df)
         try:
-#             process_data(df)
-            process_data(df, threshold_value=args.threshold_value, standard_value=args.standard_value)
+            process_data(df)
         except Exception as e:
             messagebox.showerror("Error", f"An error occurred during data processing: {str(e)}")
         finally:
             root.destroy() 
 
 
-def process_data(df, threshold_value, standard_value):
+def process_data(df):
     # Your existing data processing code here
     print(df.head())  # Just printing the head of the DataFrame as an example
     
-    # Use the threshold and standard values passed as arguments
-    print("Threshold value:", threshold_value)
-    print("Standard value:", standard_value)
 
-#     if __name__ == "__main__":
-#         # Create argument parser
-#         parser = argparse.ArgumentParser(description="Process data with custom threshold and standard values")
-
-#         # Add arguments for threshold and standard values
-#         parser.add_argument("standard_value", type=float, help="Standard value")
-#         parser.add_argument("threshold_value", type=float, help="Threshold value")
-
-#         # Parse the arguments
-#         args = parser.parse_args()
-#         print(args)
-
-#         threshold_value = args.threshold_value     
-#         standard_value  = args.standard_value    
-
-
+    # Threshold value
+    # WHO threshold
+    threshold_value = 67.5     # 45 µg/m^3    ; For PM10
+    standard_value  = 45.0     #              ; For PM10
+    #threshold_value = 22.5     # 15 µg/m^3    ; For PM2.5 
+    
 
     # Initialize dictionaries to store places meeting each criterion and the maximum criteria for each month
     places_by_month = {}
@@ -143,7 +126,7 @@ def process_data(df, threshold_value, standard_value):
         print("Criterion 2:", places_meeting_criterion_2)
         print("Criterion 3:", places_meeting_criterion_3)
 
-
+        
         # Create separate DataFrames for each criterion
         sheet_df_criterion1 = pd.DataFrame({"Criterion 1": list(places_meeting_criterion_1)})
         sheet_df_criterion2 = pd.DataFrame({"Criterion 2": list(places_meeting_criterion_2)})
@@ -321,50 +304,28 @@ def process_data(df, threshold_value, standard_value):
     writer4.save()
     writer5.save()
     writer6.save()
-
+    
     # pop-up message box with hotspots place names
-    show_hotspots(intersection_of_all_criteria, threshold_value, standard_value)
+    show_hotspots(intersection_of_all_criteria, threshold_value)
 
 
-def show_hotspots(intersection_of_all_criteria, threshold_value, standard_value):
+def show_hotspots(intersection_of_all_criteria, threshold_value):
     # Convert the set to a string for display
     hotspots_str = "\n".join(intersection_of_all_criteria)
     # Show message box with hotspots
-    messagebox.showinfo("Hotspots", f"The hotspots are:\n{hotspots_str}\n\nNote: Applied values below\n\nThreshold Value: {threshold_value}\n\nStandard Value: {standard_value}")
+    messagebox.showinfo("Hotspots", f"The hotspots are:\n{hotspots_str}\n\nThreshold Value: {threshold_value}")
 
 
-if __name__ == "__main__":
-    # Create argument parser
-    parser = argparse.ArgumentParser(description="Process data with custom threshold and standard values")
+# Create a Tkinter window
+root = tk.Tk()
+root.title("Data Processing")
 
-    # Add arguments for threshold and standard values
-    parser.add_argument("standard_value", type=float, help="Standard value")
-    parser.add_argument("threshold_value", type=float, help="Threshold value")
+# Create a button to load CSV file
+load_button = tk.Button(root, text="Load CSV", command=load_csv)
+load_button.pack(pady=200, padx=200)
 
-    # Parse the arguments
-    args = parser.parse_args()
-
-    # Create a Tkinter window
-    root = tk.Tk()
-    root.title("Data Processing")
-
-    # Create a button to load CSV file
-    load_button = tk.Button(root, text="Load CSV", command=load_csv)
-    load_button.pack(pady=200, padx=200)
-
-    # Run the Tkinter event loop
-    root.mainloop()
-    
-# # Create a Tkinter window
-# root = tk.Tk()
-# root.title("Data Processing")
-
-# # Create a button to load CSV file
-# load_button = tk.Button(root, text="Load CSV", command=load_csv)
-# load_button.pack(pady=200, padx=200)
-
-# # Run the Tkinter event loop
-# root.mainloop()
+# Run the Tkinter event loop
+root.mainloop()
 
 
 #### end of code  ####
