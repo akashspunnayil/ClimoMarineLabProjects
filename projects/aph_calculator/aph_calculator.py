@@ -1,3 +1,4 @@
+# The code to identify the air pollution hotspots using the Three-criteria method explained in Goyal et al., 2021
 
 import importlib.util
 import subprocess
@@ -46,23 +47,6 @@ def process_data(df, threshold_value, standard_value):
     # Use the threshold and standard values passed as arguments
     print("Threshold value:", threshold_value)
     print("Standard value:", standard_value)
-
-#     if __name__ == "__main__":
-#         # Create argument parser
-#         parser = argparse.ArgumentParser(description="Process data with custom threshold and standard values")
-
-#         # Add arguments for threshold and standard values
-#         parser.add_argument("standard_value", type=float, help="Standard value")
-#         parser.add_argument("threshold_value", type=float, help="Threshold value")
-
-#         # Parse the arguments
-#         args = parser.parse_args()
-#         print(args)
-
-#         threshold_value = args.threshold_value     
-#         standard_value  = args.standard_value    
-
-
 
     # Initialize dictionaries to store places meeting each criterion and the maximum criteria for each month
     places_by_month = {}
@@ -355,17 +339,6 @@ if __name__ == "__main__":
     # Run the Tkinter event loop
     root.mainloop()
     
-# # Create a Tkinter window
-# root = tk.Tk()
-# root.title("Data Processing")
-
-# # Create a button to load CSV file
-# load_button = tk.Button(root, text="Load CSV", command=load_csv)
-# load_button.pack(pady=200, padx=200)
-
-# # Run the Tkinter event loop
-# root.mainloop()
-
 
 #### end of code  ####
 
