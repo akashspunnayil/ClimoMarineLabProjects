@@ -3,12 +3,12 @@
 
 *(1)* A sample csv data is given (sample_data.csv). Please note that, unless the user change the script for their specific need at own risk,  the input data should exactly be in the format of sample data provided.
 
-*(2)* User should make changes to "threshold_value" in the code if necessary.
+*(2)* User should scientifically fix the "threshold_value" and "standard_value" before executing the script.
 
 
 **Running python code in terminal:**
 You can run the python script (*aph_calculator.py*) in terminal to identify the hotspots.
-This script should run with the desired threshold_value and standard value in the same order
+This script should run with the desired threshold_value and standard value in the same order.
 
 	python aph_calculator.py threshold_value standard_value
 
