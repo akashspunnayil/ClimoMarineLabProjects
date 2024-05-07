@@ -6,7 +6,7 @@
 *(2)* User should make changes to "threshold_value" in the code if necessary.
 
 
-**Running python code in terminal**
+**Running python code in terminal:**
 You can run the python script (*aph_calculator.py*) in terminal to identify the hotspots.
 This script should run with the desired threshold_value and standard value in the same order
 
@@ -19,11 +19,11 @@ This script should run with the desired threshold_value and standard value in th
 	*CAUTION*: Don't run in WRONG order like python aph_calculator.py 67.5 45 (WRONG!!)
 
 
-**Running Jupyter**
+**Running Jupyter:**
 A jupyter notebook is provided for the same -- *aph_calculator_normal.ipynb*
 
 
-**Runnig in Google Colaboratory**
+**Runnig in Google Colaboratory:**
 A jupyter notebook that can be used in the Google Colab is also provided for the same -- *aph_calculator_gcolab.ipynb*
 
 
