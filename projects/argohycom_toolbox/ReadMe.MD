@@ -59,6 +59,51 @@ There is no installation required. However, the functioning of the functions dem
 
 To install these dependencies, you can use pip:
 
+*I strongly recommend using a Python virtual environment or a conda environment for the toolbox before installing the dependencies. This is not mandatory, but it is advisable to be on the safe side.*
+
+
+### Using Python Virtual Environment
+
+1. **Create a virtual environment:**
+   ```bash
+   python -m venv argo-env
+   ```
+
+2. **Activate the virtual environment:**
+
+   - **On Windows:**
+     ```bash
+     .\argo-env\Scripts\activate
+     ```
+
+   - **On macOS and Linux:**
+     ```bash
+     source argo-env/bin/activate
+     ```
+
+3. **Install the required packages:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Using Conda Environment
+
+1. **Create a conda environment:**
+   ```bash
+   conda create --name argo-env python=3.8
+   ```
+
+2. **Activate the conda environment:**
+   ```bash
+   conda activate argo-env
+   ```
+
+3. **Install the required packages:**
+   ```bash
+   conda install --file requirements.txt
+   ```
+### Without any environment
+
 ```
 pip install -r requirements.txt
 
