@@ -6,7 +6,7 @@ Annette Samuelsen, Research Leader, Senior Researcher, Ocean Modelling Group, NE
 Çağlar Yumruktepe, Researcher, Ocean Modelling Group, NERSC, Norway
 
 
-NOTE: The toolbox requires argo and colocated model data in netCDF format
+NOTE: The toolbox requires argo and colocated model datasets in netCDF format
 
 
 
