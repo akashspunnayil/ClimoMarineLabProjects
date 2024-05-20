@@ -9,12 +9,11 @@ Annette Samuelsen, Research Leader, Senior Researcher, Ocean Modelling Group, NE
 NOTE: The toolbox requires argo and colocated model data in netCDF format
 
 
-```
 
-This toolbox provides a comprehensive collection of functions designed to facilitate the preprocessing of Argo float and colocated model fields. Its primary purpose is to enable a straightforward comparison between Argo float observations and model data by processing and formatting them for side-by-side analysis.
+*This toolbox provides a comprehensive collection of functions designed to facilitate the preprocessing of Argo float and colocated model fields. Its primary purpose is to enable a straightforward comparison between Argo float observations and model data by processing and formatting them for side-by-side analysis*
 
-```
-**Features**
+
+#Features
 
     * Argo Float Preprocessing: Streamline the preprocessing of Argo float data, including quality control, data interpolation, and formatting.
     * Model Field Preprocessing: Prepare colocated model fields for comparison with Argo data, including format conversion and data alignment.
@@ -26,8 +25,8 @@ This toolbox provides a comprehensive collection of functions designed to facili
 
 The toolbox includes the following 23 statistical metrics for a thorough comparison:
     
-```
 
+```
 Pearson correlation (r)
 Probability value (p-value)
 Spearman correlation (r)
@@ -55,21 +54,21 @@ Bias (bias)
 ```
 
 
-**Development Status**
+#Development Status
 
 The automation of data download and colocating is not yet fully implemented and is currently under development. Contributions to these areas are highly appreciated. If you have experience in automating data workflows or any other relevant expertise, your input would be very valuable.
 
 
-**Contributing**
+#Contributing
 
 Contributions are welcome! If you encounter any issues, have suggestions for improvements, or would like to contribute new features, please feel free to open an issue or submit a pull request. 
 
 
-**Citation**
+#Citation
 
 Users can freely access, modify, and use the code. However, if you find it useful, an acknowledgment is highly appreciated.
 
-cite:
+#cite:
 ```
 The related paper is currently under submission. Please check back for updates on the citation details once the paper is published.
 ```
