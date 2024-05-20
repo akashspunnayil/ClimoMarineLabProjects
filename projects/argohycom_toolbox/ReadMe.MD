@@ -53,6 +53,17 @@ Bias (bias)
 
 ```
 
+# Installation requirements
+
+There is no installation required. However, the functioning of the functions demands some Python packages listed in the requirements.txt file.
+
+To install these dependencies, you can use pip:
+
+```
+pip install -r requirements.txt
+
+```
+
 
 # Development Status
 
