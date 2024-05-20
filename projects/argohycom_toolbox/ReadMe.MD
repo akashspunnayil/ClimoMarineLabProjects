@@ -1,4 +1,4 @@
-**"argohycom toolbox" - Argo and Colocated Model Fields Comparison Toolbox** 
+*"argohycom toolbox" - Argo and Colocated Model Fields Comparison Toolbox* 
 
 
 ```
@@ -23,9 +23,10 @@ This toolbox provides a comprehensive collection of functions designed to facili
         * Statistical Comparison: Calculate and compare 23 statistical metrics to quantify the differences and similarities between the datasets.
     * Analysis: Perform further analysis and interpretation based on the comparative results, leveraging the toolbox's flexibility and extensibility.
     
+
+The toolbox includes the following 23 statistical metrics for a thorough comparison:
     
 ```
-The toolbox includes the following 23 statistical metrics for a thorough comparison:
 
 Pearson correlation (r)
 Probability value (p-value)
@@ -64,12 +65,12 @@ The automation of data download and colocating is not yet fully implemented and 
 Contributions are welcome! If you encounter any issues, have suggestions for improvements, or would like to contribute new features, please feel free to open an issue or submit a pull request. 
 
 
-
-```
-Citation
+**Citation**
 
 Users can freely access, modify, and use the code. However, if you find it useful, an acknowledgment is highly appreciated.
 
-Citation: The related paper is currently under submission. Please check back for updates on the citation details once the paper is published.
+cite:
+```
+The related paper is currently under submission. Please check back for updates on the citation details once the paper is published.
 ```
 
