@@ -1,7 +1,7 @@
 # "argohycom toolbox" - Argo and Colocated Model Fields Comparison Toolbox
 
 
-Thanks to the generous and valuable contributions of: 
+Thanks to the generous and valuable contributions of:  
 Annette Samuelsen, Research Leader, Senior Researcher, Ocean Modelling Group, NERSC, Norway
 Çağlar Yumruktepe, Researcher, Ocean Modelling Group, NERSC, Norway
 
