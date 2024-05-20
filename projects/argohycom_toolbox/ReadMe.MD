@@ -13,7 +13,7 @@ NOTE: The toolbox requires argo and colocated model data in netCDF format
 *This toolbox provides a comprehensive collection of functions designed to facilitate the preprocessing of Argo float and colocated model fields. Its primary purpose is to enable a straightforward comparison between Argo float observations and model data by processing and formatting them for side-by-side analysis*
 
 
-#Features
+# Features
 
     * Argo Float Preprocessing: Streamline the preprocessing of Argo float data, including quality control, data interpolation, and formatting.
     * Model Field Preprocessing: Prepare colocated model fields for comparison with Argo data, including format conversion and data alignment.
