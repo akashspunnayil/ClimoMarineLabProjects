@@ -1,11 +1,10 @@
-*"argohycom toolbox" - Argo and Colocated Model Fields Comparison Toolbox* 
+# "argohycom toolbox" - Argo and Colocated Model Fields Comparison Toolbox
 
 
-```
 Thanks to the generous and valuable contributions of: 
 Annette Samuelsen, Research Leader, Senior Researcher, Ocean Modelling Group, NERSC, Norway
 Çağlar Yumruktepe, Researcher, Ocean Modelling Group, NERSC, Norway
-```
+
 
 NOTE: The toolbox requires argo and colocated model data in netCDF format
 
@@ -13,6 +12,7 @@ NOTE: The toolbox requires argo and colocated model data in netCDF format
 ```
 
 This toolbox provides a comprehensive collection of functions designed to facilitate the preprocessing of Argo float and colocated model fields. Its primary purpose is to enable a straightforward comparison between Argo float observations and model data by processing and formatting them for side-by-side analysis.
+
 ```
 **Features**
 
