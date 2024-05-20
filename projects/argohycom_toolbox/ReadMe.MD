@@ -55,9 +55,9 @@ Bias (bias)
 
 # Installation requirements
 
-There is no installation required. However, the functioning of the functions demands some Python packages listed in the requirements.txt file.
+The functions in this toolbox requires some Python packages listed in the requirements.txt file.
 
-To install these dependencies, you can use pip:
+To install these dependencies, you can use pip.
 
 *I strongly recommend using a Python virtual environment or a conda environment for the toolbox before installing the dependencies. This is not mandatory, but it is advisable to be on the safe side.*
 
